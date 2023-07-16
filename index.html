@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tedric</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="landing">
+      <nav>
+        <figure>
+          <div class="nav__logo">Tedric</div>
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a href="#" class="nav__link--anchor link__hover link__hover--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#languages"
+              class="nav__link--anchor link__hover link__hover--black"
+              >Languages</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover link__hover--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__link--anchor link__hover link__hover--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click">
+            <a href="#" class="nav__link--anchor link__hover link__hover--black"
+              ><i class="fas fa-adjust"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <header>
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title text--orange">I'm Tedric</h1>
+          <p class="header__para">
+            I'm a
+            <span class="text--orange bold">final year undergraduate</span>
+            pursuing a bachelor's degree in Business, specializing in
+            Business/Data Analytics at the Nanyang Technological University. I'm
+            an aspiring
+            <span class="text--orange bold">frontend developer</span>
+            passionate about building responsive web applications with great
+            user experiences.
+            <br />
+            Here's a bit more about me.
+          </p>
+          <div class="social__list">
+            <a
+              href="https://www.linkedin.com/in/tedric-chow/"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/tedricc"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="./assets/Resume 2023.pdf"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fas fa-file-pdf"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <button class="mail__button click">
+        <i class="fas fa-envelope"></i>
+      </button>
+
+      <a href="#languages" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__about--title">
+            Here's a bit about me.
+          </h3>
+          <h4 class="modal__subtitle modal__about--subtitle">
+            Frontend Software Engineer
+          </h4>
+          <p class="modal__para">
+            I'm a
+            <span class="text--orange bold">final year undergraduate</span>
+            pursuing a bachelor's degree in Business, specializing in
+            Business/Data Analytics at the Nanyang Technological University. I'm
+            an aspiring
+            <span class="text--orange bold">frontend developer</span> passionate
+            about building responsive web applications with great user
+            experiences.
+            <br />
+            I'm currently upskilling myself with a frontend developer bootcamp
+            while working on various challenging software projects. I've worked
+            in high-pressure environments like the Singapore Exchange and am
+            well-versed in the finance industry as well.
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt="HTML logo"
+                class="modal__language--img"
+              />
+              <span class="modal__language--name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt="CSS logo"
+                class="modal__language--img"
+              />
+              <span class="modal__language--name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt="JavaScript logo"
+                class="modal__language--img"
+              />
+              <span class="modal__language--name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                alt="React logo"
+                class="modal__language--img"
+              />
+              <span class="modal__language--name">React</span>
+            </figure>
+            <!-- <figure class="modal__language">
+              <img
+                src="https://db.cs.uni-tuebingen.de/teaching/ws2223/sql-is-a-programming-language/logo.svg"
+                alt="SQL logo"
+                class="modal__language--img"
+              />
+              <span class="modal__language--name">SQL</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                src="https://img.freepik.com/free-icon/snakes_318-368381.jpg"
+                alt="Python logo"
+                class="modal__language--img"
+              />
+              <span class="modal__language--name">Python</span>
+            </figure> -->
+          </div>
+        </div>
+
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__contact--title">Let's have a chat!</h3>
+          <h4 class="modal__subtitle modal__contact--subtitle">
+            I'm currently seeking new opportunities.
+          </h4>
+          <form id="contact__form" action="">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input name="user_name" type="text" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input name="user_email" type="email" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            <button id="contact__submit" class="form__button">
+              Let's connect
+            </button>
+          </form>
+
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for reaching out! Looking forward to speaking with you soon.
+          </div>
+        </div>
+        <i class="fas fa-times click"></i>
+      </div>
+    </section>
+
+    <section id="languages">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            This is my <span class="text--orange">technology stack</span>
+          </h1>
+          <div class="language__list">
+            <div class="language">
+              <figure class="language__image--container">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                  alt="HTML logo"
+                  class="language__image"
+                />
+              </figure>
+              <span class="language__name">HTML</span>
+            </div>
+            <div class="language">
+              <figure class="language__image--container">
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                  alt="CSS logo"
+                  class="language__image"
+                />
+              </figure>
+              <span class="language__name">CSS</span>
+            </div>
+            <div class="language">
+              <figure class="language__image--container">
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                  alt="JavaScript logo"
+                  class="language__image"
+                />
+              </figure>
+              <span class="language__name">JavaScript</span>
+            </div>
+            <div class="language">
+              <figure class="language__image--container">
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                  alt="React logo"
+                  class="language__image"
+                />
+              </figure>
+              <span class="language__name">React</span>
+            </div>
+            <!-- <div class="language">
+              <figure class="language__image--container">
+                <img
+                  src="https://db.cs.uni-tuebingen.de/teaching/ws2223/sql-is-a-programming-language/logo.svg"
+                  alt="SQL logo"
+                  class="language__image"
+                />
+              </figure>
+              <span class="language__name">SQL</span>
+            </div>
+            <div class="language">
+              <figure class="language__image--container">
+                <img
+                  src="https://img.freepik.com/free-icon/snakes_318-368381.jpg"
+                  alt="Python logo"
+                  class="language__image"
+                />
+              </figure>
+              <span class="language__name">Python</span>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="text--orange">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/treact clone site.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Treact Clone Project
+                  </h3>
+                  <h4 class="project__description--subtitle">
+                    HTML, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Magni culpa sapiente distinctio reiciendis fuga debitis
+                    tenetur quisquam accusamus. Deleniti quod laudantium, animi
+                    iste dicta ullam.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/tedricc/treact-clone-project"
+                      target="_blank"
+                      class="project__description--link"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://tedricc.github.io/treact-clone-project/"
+                      target="_blank"
+                      class="project__description--link"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/ecommerce site.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Ecommerce Project</h3>
+                  <h4 class="project__description--subtitle">
+                    HTML, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Magni culpa sapiente distinctio reiciendis fuga debitis
+                    tenetur quisquam accusamus. Deleniti quod laudantium, animi
+                    iste dicta ullam.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/tedricc/ecommerce-project"
+                      target="_blank"
+                      class="project__description--link"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://tedricc.github.io/ecommerce-project/"
+                      target="_blank"
+                      class="project__description--link"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer__container">
+            <figure>
+              <div class="footer__logo">Tedric</div>
+            </figure>
+            <div class="footer__social--list">
+              <a
+                href="https://www.linkedin.com/in/tedric-chow/"
+                target="_blank"
+                class="footer__social--link link__hover link__hover--white"
+                >LinkedIn</a
+              >
+              <a
+                href="https://github.com/tedricc"
+                target="_blank"
+                class="footer__social--link link__hover link__hover--white"
+                >GitHub</a
+              >
+              <a
+                href="#"
+                class="footer__social--link link__hover link__hover--white"
+                >Email</a
+              >
+              <a
+                href="./assets/Resume 2023.pdf"
+                target="_blank"
+                class="footer__social--link link__hover link__hover--white"
+                >Resume</a
+              >
+            </div>
+            <div class="footer__copyright">
+              Copyright &copy; 2023 Tedric Chow
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
