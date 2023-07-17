@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tedric</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/favicon-32x32.png" />
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./app.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("84s8nGLZJITkN594v");
+      })();
+    </script>
   </head>
-  <body>
+  <body onmousemove="moveBackground(event)">
     <section id="landing">
       <nav>
         <figure>
@@ -36,64 +47,68 @@
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a href="#" class="nav__link--anchor link__hover link__hover--black"
               >Contact</a
             >
           </li>
           <li class="nav__link click">
             <a href="#" class="nav__link--anchor link__hover link__hover--black"
-              ><i class="fas fa-adjust"></i
+              ><i class="fas fa-adjust" onclick="toggleContrast()"></i
             ></a>
           </li>
         </ul>
       </nav>
 
       <header>
-        <div class="header__content">
-          <h1 class="title">Hey</h1>
-          <h1 class="title text--orange">I'm Tedric</h1>
-          <p class="header__para">
-            I'm a
-            <span class="text--orange bold">final year undergraduate</span>
-            pursuing a bachelor's degree in Business, specializing in
-            Business/Data Analytics at the Nanyang Technological University. I'm
-            an aspiring
-            <span class="text--orange bold">frontend developer</span>
-            passionate about building responsive web applications with great
-            user experiences.
-            <br />
-            Here's a bit more about me.
-          </p>
-          <div class="social__list">
-            <a
-              href="https://www.linkedin.com/in/tedric-chow/"
-              target="_blank"
-              class="social__link click"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a
-              href="https://github.com/tedricc"
-              target="_blank"
-              class="social__link click"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="./assets/Resume 2023.pdf"
-              target="_blank"
-              class="social__link click"
-            >
-              <i class="fas fa-file-pdf"></i>
-            </a>
+        <div class="header__container">
+          <div class="header__content">
+            <h1 class="title">Hey</h1>
+            <h1 class="title text--orange">I'm Tedric</h1>
+            <p class="header__para">
+              I'm a
+              <span class="text--orange bold">final year undergraduate</span>
+              pursuing a bachelor's degree in Business, specializing in
+              Business/Data Analytics at the Nanyang Technological University.
+              I'm an aspiring
+              <span class="text--orange bold">frontend developer</span>
+              passionate about building responsive web applications with great
+              user experiences.
+              <br />
+              Here's a bit more about me.
+            </p>
+            <div class="social__list">
+              <a
+                href="https://www.linkedin.com/in/tedric-chow/"
+                target="_blank"
+                class="social__link click"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/tedricc"
+                target="_blank"
+                class="social__link click"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="./assets/Resume 2023.pdf"
+                target="_blank"
+                class="social__link click"
+              >
+                <i class="fas fa-file-pdf"></i>
+              </a>
+            </div>
           </div>
         </div>
       </header>
 
-      <button class="mail__button click">
-        <i class="fas fa-envelope"></i>
-      </button>
+      <a href="#">
+        <button class="mail__button click" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </a>
 
       <a href="#languages" class="scroll">
         <div class="scroll__icon click"></div>
@@ -175,11 +190,12 @@
         </div>
 
         <div class="modal__half modal__contact">
+          <i class="fas fa-times click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__contact--title">Let's have a chat!</h3>
           <h4 class="modal__subtitle modal__contact--subtitle">
             I'm currently seeking new opportunities.
           </h4>
-          <form id="contact__form" action="">
+          <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item--label">Name</label>
               <input name="user_name" type="text" required />
@@ -190,14 +206,7 @@
             </div>
             <div class="form__item">
               <label class="form__item--label">Message</label>
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                name="message"
-                required
-              ></textarea>
+              <textarea cols="30" rows="10" name="message" required></textarea>
             </div>
             <button id="contact__submit" class="form__button">
               Let's connect
@@ -212,8 +221,17 @@
             Thanks for reaching out! Looking forward to speaking with you soon.
           </div>
         </div>
-        <i class="fas fa-times click"></i>
       </div>
+
+      <img src="./assets/semi circle.svg" class="shape shape0" alt="" />
+      <img src="./assets/circle.svg" class="shape shape1" alt="" />
+      <img src="./assets/squiggly.svg" class="shape shape2" alt="" />
+      <img src="./assets/circle.svg" class="shape shape3" alt="" />
+      <img src="./assets/triangle.svg" class="shape shape4" alt="" />
+      <img src="./assets/circle.svg" class="shape shape5" alt="" />
+      <img src="./assets/squiggly.svg" class="shape shape6" alt="" />
+      <img src="./assets/circle.svg" class="shape shape7" alt="" />
+      <img src="./assets/semi circle.svg" class="shape shape8" alt="" />
     </section>
 
     <section id="languages">
@@ -396,6 +414,7 @@
               >
               <a
                 href="#"
+                onclick="toggleModal()"
                 class="footer__social--link link__hover link__hover--white"
                 >Email</a
               >
