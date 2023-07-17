@@ -180,7 +180,7 @@ label {
 nav,
 .scroll,
 header,
-.mail__button {
+.mail {
   opacity: 1;
   visibility: visible;
   transition: all 600ms 600ms ease;
@@ -189,7 +189,7 @@ header,
 .modal__open nav,
 .modal__open .scroll,
 .modal__open header,
-.modal__open .mail__button {
+.modal__open .mail {
   opacity: 0;
   visibility: hidden;
   transition: all 600ms ease;
