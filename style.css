@@ -820,6 +820,18 @@ footer {
   .project__description--para {
     display: none;
   }
+
+  .project__img {
+    transform: scale(1.05);
+  }
+
+  .project__wrapper:hover .project__img {
+    transform: scale(1.1);
+  }
+
+  .shape {
+    display: none;
+  }
 }
 
 @media (max-width: 550px) {
