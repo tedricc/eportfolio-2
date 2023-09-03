@@ -405,6 +405,11 @@ nav {
   max-width: 100px;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal__contact {
   background-color: #242424;
   color: #ffffff;
@@ -786,6 +791,12 @@ footer {
   #languages,
   .nav__link:nth-child(2) {
     display: none;
+  }
+
+  .form__button {
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
   }
 }
 
